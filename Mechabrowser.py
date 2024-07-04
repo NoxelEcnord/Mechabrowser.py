@@ -114,11 +114,11 @@ class Mechabrowser:
     def list_forms(self):
         forms = self.browser.get_current_page().find_all("form")
         for i, form in enumerate(forms):
-            print("#"*10,f"Form #{i}","#*10")
-            print("|","'''''"*28,"|")
+            print("#"*10+f"Form #{i}"+"#"*10)
+            print("|","'''''"*28+"|")
             print(form)
             print("\n\n")
-            print("|",",,,,,,"*28,"|")
+            print("|",",,,,,,"*28+"|")
             print("-"*30)
 
     def select_form(self, n=0):
